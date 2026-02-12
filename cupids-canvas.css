@@ -1,0 +1,53 @@
+/* Valentine's Day Color Palette & Variables */
+:root {
+    /* Color Variables */
+  --cupid-pink: #ffafcc;
+  --valentine-red: #ff4d6d;
+  --love-purple: #c77dff;
+  --chocolate: #7b3f00;
+  --vanilla: #fffaf0;
+  --night-sky-purple: purple;
+  --night-sky-deep-purple: rgb(21, 0, 46);
+  
+    /* Gradients */
+  --sky-gradient: linear-gradient(to bottom, var(--night-sky-deep-purple) 100px ,var(--night-sky-purple) 600px, var(--valentine-red));
+
+  /* Spacing Variables */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 2rem;
+}
+
+/* Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition: none !important;
+  }
+}
+
+/* CSS-only page navigation with :target */
+.page {
+  display: none;
+}
+
+.page:target {
+  display: block;
+}
+
+/* Heart animation example */
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.heart {
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+html {
+    background: var(--sky-gradient);
+}
