@@ -10,7 +10,7 @@
   --night-sky-deep-purple: rgb(21, 0, 46);
   
     /* Gradients */
-  --sky-gradient: linear-gradient(to bottom, var(--night-sky-deep-purple) 100px ,var(--night-sky-purple) 600px, var(--valentine-red));
+  --sky-gradient: linear-gradient(to bottom, var(--night-sky-deep-purple) 100px ,var(--night-sky-purple) 600px, var(--valentine-red)) no-repeat;
   --card-gradient: linear-gradient(to right, var(--valentine-red), var(--cupid-pink));
   
   /* Spacing Variables */
@@ -31,6 +31,12 @@
 
 html {
     background: var(--sky-gradient);
+    min-height: 100%;
+}
+
+body {
+    height: auto;
+    margin: 0px 10px;
 }
 
 /* Reduced Motion Preferences */
