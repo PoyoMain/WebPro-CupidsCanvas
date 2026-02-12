@@ -17,6 +17,19 @@
   --space-2: 0.5rem;
   --space-3: 1rem;
   --space-4: 2rem;
+
+  /* Radius Variables */
+  --radius-1: 0.25rem;
+  --radius-2: 0.5rem;
+  --radius-3: 1rem;
+  --radius-4: 2rem;
+
+  /* Fonts */
+  --font-main: "Emilys Candy", sans-serif;
+}
+
+html {
+    background: var(--sky-gradient);
 }
 
 /* Reduced Motion Preferences */
@@ -48,6 +61,23 @@
   animation: heartbeat 1.5s ease-in-out infinite;
 }
 
-html {
-    background: var(--sky-gradient);
+/* Containers */
+.container {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0 var(--space-2);
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--valentine-red);
+    position: relative;
+    border-radius: var(--radius-2);
+    border: 6px solid #ff9900;
+    border-radius: 8px;
+    padding: var(--space-2);
+    position: relative;
+    box-shadow: 0px 5px 5px rgba(59, 0, 0, 0.95);
+    font-family: var(--font);
+    font-size: 20px
 }
