@@ -37,6 +37,7 @@
   display: block;
 }
 
+
 /* Heart animation example */
 @keyframes heartbeat {
   0% { transform: scale(1); }
